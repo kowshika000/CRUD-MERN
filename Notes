@@ -1,0 +1,17 @@
+setup MERN CRUD
+----------------
+
+npx create-react-app client - REACT JS
+mkdir backend - NODE JS , EXPRESS JS
+
+create json in backend
+-----------------------
+
+npm init -y
+npm i dependency-name
+
+server side - backend
+---------------------
+
+1. Database setup - MongoDB
+
