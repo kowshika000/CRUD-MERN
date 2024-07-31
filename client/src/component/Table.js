@@ -14,13 +14,13 @@ const TableData = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002")
+      .get("https://crud-mern-q7ie.onrender.com")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
 
  const handleDelete=(id)=>{
-  axios.delete('http://localhost:3002/deleteUser/'+id)
+  axios.delete('https://crud-mern-q7ie.onrender.com/deleteUser/'+id)
   .then(res=>{console.log(res)
     window.location.reload()
   })

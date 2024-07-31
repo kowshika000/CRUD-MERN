@@ -26,7 +26,7 @@ const FormCE = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3002/createUser", { name, email })
+      .post("https://crud-mern-q7ie.onrender.com/createUser", { name, email })
       .then((result) => {
         console.log(result);
         navigate("/");
