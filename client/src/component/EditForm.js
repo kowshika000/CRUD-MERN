@@ -23,7 +23,7 @@ const EditForm = () => {
   const { id } = useParams();
   useEffect(() => {
     axios
-      .get("https://crud-mern-q7ie.onrender.com/getUser/" + id)
+      .get("http://localhost:3002/getUser/" + id)
       .then((result) =>
         setFormvalue({
           ...formValue,
@@ -38,7 +38,7 @@ const EditForm = () => {
   const handleUpdate = (e) => {
     e.preventDefault();
     axios
-      .put("https://crud-mern-q7ie.onrender.com/updateUser/" + id, { name, email })
+      .put("http://localhost:3002/updateUser/" + id, { name, email })
       .then((result) => {
         console.log(result);
         navigate("/");
